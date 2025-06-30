@@ -1,0 +1,91 @@
+/* Modern Social Media Style */
+:root {
+  --instagram: #e1306c;
+  --tiktok: #69c9d0;
+  --youtube: #ff0000;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f5f7ff;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+h2 {
+  color: #333;
+  font-size: 1.2em;
+  margin-top: 0;
+}
+
+input, select, button {
+  width: 100%;
+  padding: 14px;
+  margin: 8px 0;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  font-size: 16px;
+}
+
+button {
+  background: #4361ee;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+button:hover {
+  background: #3a56e4;
+  transform: translateY(-2px);
+}
+
+.result-card {
+  background: linear-gradient(135deg, #6a11cb 0%, #4361ee 100%);
+  color: white;
+}
+
+#generated-url {
+  background: rgba(255,255,255,0.15);
+  padding: 15px;
+  border-radius: 12px;
+  margin: 15px 0;
+  word-break: break-all;
+  font-family: monospace;
+}
+
+.sharing-buttons {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.sharing-buttons button {
+  flex: 1;
+  background: rgba(255,255,255,0.2);
+}
+
+#health-check {
+  padding: 10px;
+  border-radius: 8px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Platform color indicators */
+#platform-select option[value="instagram"] { background: color-mix(in srgb, var(--instagram) 10%, white); }
+#platform-select option[value="tiktok"] { background: color-mix(in srgb, var(--tiktok) 10%, white); }
+#platform-select option[value="youtube"] { background: color-mix(in srgb, var(--youtube) 10%, white); }
