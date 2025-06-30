@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Social UTM Wizard</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.1/build/qrcode.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <!-- Feature 1: Social Templates -->
+    <div class="card">
+      <h2>🚀 Social Platform Presets</h2>
+      <select id="platform-select">
+        <option value="">-- Select Platform --</option>
+        <option value="instagram">Instagram</option>
+        <option value="tiktok">TikTok</option>
+        <option value="youtube">YouTube Shorts</option>
+      </select>
+    </div>
+
+    <!-- Feature 2: Emoji Campaign Generator -->
+    <div class="card">
+      <h2>🎲 Fun Campaign Generator</h2>
+      <button id="generate-campaign">Generate Creative Name</button>
+      <div id="campaign-result">summer_sale_2024</div>
+    </div>
+
+    <!-- Core UTM Builder -->
+    <div class="card">
+      <h2>🔗 Your URL</h2>
+      <input type="url" id="base-url" placeholder="https://yourwebsite.com">
+      
+      <h2>📝 Campaign Parameters</h2>
+      <input type="text" id="utm-source" placeholder="Source (e.g., instagram)">
+      <input type="text" id="utm-medium" placeholder="Medium (e.g., story)">
+      <input type="text" id="utm-campaign" placeholder="Campaign">
+      
+      <!-- Feature 5: Link Health Check -->
+      <div id="health-check">✅ Parameters look good!</div>
+    </div>
+
+    <!-- Generated Output -->
+    <div class="card result-card">
+      <h2>✨ Your Tracked Link</h2>
+      <div id="generated-url">(Link will appear here)</div>
+      
+      <!-- Feature 3: One-Click Sharing -->
+      <div class="sharing-buttons">
+        <button data-platform="twitter">🐦 Tweet This</button>
+        <button data-platform="linkedin">💼 Share on LinkedIn</button>
+      </div>
+      
+      <!-- Feature 4: QR Code -->
+      <div id="qrcode"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
