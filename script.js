@@ -1,104 +1,54 @@
-// Feature 1: Social Templates
-document.getElementById('platform-select').addEventListener('change', (e) => {
-  const platform = e.target.value;
-  if (!platform) return;
-  
-  const presets = {
-    instagram: { source: 'instagram', medium: 'story' },
-    tiktok: { source: 'tiktok', medium: 'video' },
-    youtube: { source: 'youtube', medium: 'shorts' }
-  };
-  
-  document.getElementById('utm-source').value = presets[platform].source;
-  document.getElementById('utm-medium').value = presets[platform].medium;
-  updateUTM();
-});
+// Set last refresh time
+const now = new Date();
+document.getElementById('last-refresh').textContent = now.toLocaleTimeString();
 
-// Feature 2: Emoji Campaign Generator
-document.getElementById('generate-campaign').addEventListener('click', () => {
-  const emojis = ['🚀', '🔥', '🎯', '✨', '💡', '🌟', '📈', '🫶'];
-  const words = ['viral', 'boost', 'trend', 'growth', 'win', 'success', 'impact'];
-  
-  const randomEmoji = emojis[Math.floor(Math.random() * emojis.length)];
-  const randomWord = words[Math.floor(Math.random() * words.length)];
-  const year = new Date().getFullYear();
-  
-  const campaignName = `${randomWord}_${randomEmoji}_${year}`;
-  document.getElementById('utm-campaign').value = campaignName;
-  document.getElementById('campaign-result').textContent = campaignName;
-  updateUTM();
-});
-
-// Feature 5: Link Health Check
-function validateUTM() {
-  const source = document.getElementById('utm-source').value;
-  const campaign = document.getElementById('utm-campaign').value;
-  const healthEl = document.getElementById('health-check');
-  
-  let message = '✅ Parameters look good!';
-  let bgColor = '#4caf50';
-  
-  if (!source || !campaign) {
-    message = '⚠️ Source and Campaign are required!';
-    bgColor = '#ff9800';
-  } else if (source.includes(' ')) {
-    message = '❌ Use underscores instead of spaces (e.g., instagram_story)';
-    bgColor = '#f44336';
-  }
-  
-  healthEl.textContent = message;
-  healthEl.style.backgroundColor = bgColor;
+// Generate random data for demonstration
+function generateRandomData() {
+    // Update visitor count
+    const visitors = Math.floor(Math.random() * 100) + 100;
+    document.getElementById('visitors').textContent = visitors;
+    
+    // Update live data
+    const liveData = Math.floor(Math.random() * 1000);
+    document.getElementById('live-data').textContent = liveData;
+    
+    // Update stats
+    document.getElementById('stat1').textContent = Math.floor(Math.random() * 500) + 200;
+    document.getElementById('stat2').textContent = Math.floor(Math.random() * 10000) + 5000;
+    document.getElementById('stat3').textContent = Math.floor(Math.random() * 1000000).toLocaleString();
+    document.getElementById('stat4').textContent = Math.floor(Math.random() * 500) + 100;
+    
+    // Random uptime between 99.8% and 99.99%
+    const uptime = (99.8 + Math.random() * 0.19).toFixed(2);
+    document.getElementById('uptime').textContent = uptime + '%';
 }
 
-// Core UTM Generator
-function updateUTM() {
-  validateUTM();
-  
-  const baseUrl = document.getElementById('base-url').value;
-  const source = document.getElementById('utm-source').value;
-  const medium = document.getElementById('utm-medium').value;
-  const campaign = document.getElementById('utm-campaign').value;
-  
-  if (!baseUrl) return;
-  
-  const params = new URLSearchParams({
-    utm_source: source,
-    utm_medium: medium,
-    utm_campaign: campaign
-  });
-  
-  const trackedUrl = `${baseUrl}?${params.toString()}`;
-  document.getElementById('generated-url').textContent = trackedUrl;
-  
-  // Feature 4: Update QR Code
-  document.getElementById('qrcode').innerHTML = '';
-  new QRCode(document.getElementById('qrcode'), {
-    text: trackedUrl,
-    width: 160,
-    height: 160,
-    colorDark: '#ffffff',
-    colorLight: 'transparent'
-  });
+// Initialize timer
+let seconds = 10;
+const timerElement = document.getElementById('timer');
+const refreshSecondsElement = document.getElementById('refresh-seconds');
+
+function updateTimer() {
+    seconds--;
+    timerElement.textContent = seconds;
+    refreshSecondsElement.textContent = seconds;
+    
+    if (seconds <= 0) {
+        // Refresh the page
+        location.reload();
+    }
 }
 
-// Feature 3: One-Click Sharing
-document.querySelectorAll('.sharing-buttons button').forEach(button => {
-  button.addEventListener('click', () => {
-    const platform = button.dataset.platform;
-    const text = "Check out this tracked link I made!";
-    const url = document.getElementById('generated-url').textContent;
+// Initialize the page
+function init() {
+    generateRandomData();
     
-    const shareUrls = {
-      twitter: `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(url)}`,
-      linkedin: `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(url)}`
-    };
+    // Update timer every second
+    setInterval(updateTimer, 1000);
     
-    window.open(shareUrls[platform], '_blank', 'width=600,height=400');
-  });
-});
+    // Update data every 3 seconds to show live changes
+    setInterval(generateRandomData, 3000);
+}
 
-// Initialize
-document.querySelectorAll('input, select').forEach(el => {
-  el.addEventListener('input', updateUTM);
-});
-updateUTM();
+// Start when page loads
+window.onload = init;
