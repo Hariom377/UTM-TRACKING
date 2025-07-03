@@ -4,75 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Auto-Refreshing Website</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <header>
-            <h1><i class="fas fa-sync-alt"></i> Auto-Refreshing Website</h1>
-            <p class="subtitle">This page automatically refreshes every 10 seconds to show updated content</p>
-        </header>
-        
-        <div class="timer-container">
-            <div class="timer-label">
-                <i class="fas fa-clock"></i> Next refresh in:
-            </div>
-            <div id="timer">10</div>
+        <h1>Auto-Refreshing Website</h1>
+        <div class="timer">
+            Page will refresh in <span id="countdown">10</span> seconds
         </div>
-        
-        <div class="content-grid">
-            <div class="card">
-                <i class="fas fa-globe-americas"></i>
-                <h3>Global Visitors</h3>
-                <p>Current visitors: <span id="visitors">142</span></p>
-            </div>
-            
-            <div class="card">
-                <i class="fas fa-chart-line"></i>
-                <h3>Live Data</h3>
-                <p>Data updates on each refresh: <span id="live-data">0</span></p>
-            </div>
-            
-            <div class="card">
-                <i class="fas fa-server"></i>
-                <h3>System Status</h3>
-                <p>Uptime: <span id="uptime">99.97%</span></p>
-            </div>
-        </div>
-        
-        <div class="stats-container">
-            <h2 class="stats-title">Real-time Statistics</h2>
-            <div class="stats-grid">
-                <div class="stat-box">
-                    <div class="stat-value" id="stat1">0</div>
-                    <div class="stat-label">Active Users</div>
-                </div>
-                <div class="stat-box">
-                    <div class="stat-value" id="stat2">0</div>
-                    <div class="stat-label">Requests</div>
-                </div>
-                <div class="stat-box">
-                    <div class="stat-value" id="stat3">0</div>
-                    <div class="stat-label">Data Points</div>
-                </div>
-                <div class="stat-box">
-                    <div class="stat-value" id="stat4">0</div>
-                    <div class="stat-label">Transactions</div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="refresh-info">
-            <p>This page demonstrates automatic refreshing using JavaScript's <span class="highlight">setInterval</span> and <span class="highlight">location.reload()</span> methods.</p>
-            <p>The page will refresh in <span class="highlight" id="refresh-seconds">10</span> seconds. All data is randomly generated for demonstration purposes.</p>
+        <div class="content">
+            <p>Current time: <span id="current-time"></span></p>
+            <p>This page automatically refreshes every 10 seconds.</p>
         </div>
     </div>
-    
-    <footer>
-        <p>Auto-Refresh Demo &copy; 2023 | Page refreshed at: <span id="last-refresh"></span></p>
-    </footer>
-
     <script src="script.js"></script>
 </body>
 </html>
