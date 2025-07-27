@@ -12,7 +12,27 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://yourusername.github.io/your-repo-name">
     <link rel="canonical" href="https://yourusername.github.io/your-repo-name">
-    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- CRITICAL: CSS Link - Make sure this path is correct -->
+    <link rel="stylesheet" href="./css/style.css">
+    
+    <!-- Fallback CSS in case external file fails -->
+    <style>
+        /* Emergency fallback styles */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; background: #f8f9fa; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        .header { background: #fff; box-shadow: 0 2px 10px rgba(0,0,0,0.1); position: fixed; width: 100%; top: 0; z-index: 1000; }
+        .navbar { padding: 1rem 0; }
+        .nav-container { display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        .logo { font-size: 1.8rem; font-weight: bold; color: #007bff; }
+        .nav-menu { display: flex; list-style: none; gap: 2rem; }
+        .nav-link { text-decoration: none; color: #333; font-weight: 500; }
+        .hero { background: linear-gradient(135deg, #007bff, #0056b3); color: white; padding: 120px 0 80px; text-align: center; margin-top: 80px; }
+        .hero-title { font-size: 3rem; margin-bottom: 1rem; font-weight: 700; }
+        .hero-subtitle { font-size: 1.3rem; margin-bottom: 2rem; }
+        .cta-button { display: inline-block; background: #28a745; color: white; padding: 15px 30px; text-decoration: none; border-radius: 50px; font-weight: 600; }
+    </style>
     
     <!-- Schema Markup -->
     <script type="application/ld+json">
@@ -26,6 +46,23 @@
     </script>
 </head>
 <body>
+    <!-- CSS Loading Check -->
+    <script>
+        // Check if CSS is loaded
+        window.addEventListener('load', function() {
+            const testElement = document.createElement('div');
+            testElement.style.cssText = 'position: absolute; visibility: hidden;';
+            testElement.className = 'css-test';
+            document.body.appendChild(testElement);
+            
+            const computedStyle = window.getComputedStyle(testElement);
+            if (computedStyle.getPropertyValue('font-family').indexOf('Segoe UI') === -1) {
+                console.warn('CSS not loaded properly. Using fallback styles.');
+                document.body.classList.add('fallback-mode');
+            }
+        });
+    </script>
+
     <!-- Header -->
     <header class="header">
         <nav class="navbar">
@@ -54,9 +91,10 @@
             <h2 class="section-title">Top Rated Tech Accessories</h2>
             <div class="products-grid">
                 
-                <!-- Product Card 1 - REPLACE WITH YOUR PRODUCTS -->
+                <!-- Product Card 1 -->
                 <div class="product-card">
-                    <img src="images/product1.jpg" alt="Wireless Earbuds Pro Max" class="product-image">
+                    <img src="./images/product1.jpg" alt="Wireless Earbuds Pro Max" class="product-image" 
+                         onerror="this.src='https://via.placeholder.com/400x250/007bff/ffffff?text=Product+Image'">
                     <div class="product-info">
                         <h3 class="product-title">Wireless Earbuds Pro Max</h3>
                         <div class="rating">
@@ -69,9 +107,10 @@
                     </div>
                 </div>
 
-                <!-- Product Card 2 - REPLACE WITH YOUR PRODUCTS -->
+                <!-- Product Card 2 -->
                 <div class="product-card">
-                    <img src="images/product2.jpg" alt="Fast Charging Cable Set" class="product-image">
+                    <img src="./images/product2.jpg" alt="Fast Charging Cable Set" class="product-image"
+                         onerror="this.src='https://via.placeholder.com/400x250/28a745/ffffff?text=Product+Image'">
                     <div class="product-info">
                         <h3 class="product-title">Fast Charging Cable Set</h3>
                         <div class="rating">
@@ -84,9 +123,10 @@
                     </div>
                 </div>
 
-                <!-- Product Card 3 - REPLACE WITH YOUR PRODUCTS -->
+                <!-- Product Card 3 -->
                 <div class="product-card">
-                    <img src="images/product3.jpg" alt="Wireless Phone Charger" class="product-image">
+                    <img src="./images/product3.jpg" alt="Wireless Phone Charger" class="product-image"
+                         onerror="this.src='https://via.placeholder.com/400x250/dc3545/ffffff?text=Product+Image'">
                     <div class="product-info">
                         <h3 class="product-title">Wireless Phone Charger</h3>
                         <div class="rating">
@@ -99,9 +139,10 @@
                     </div>
                 </div>
 
-                <!-- Product Card 4 - REPLACE WITH YOUR PRODUCTS -->
+                <!-- Product Card 4 -->
                 <div class="product-card">
-                    <img src="images/product4.jpg" alt="Laptop Stand Adjustable" class="product-image">
+                    <img src="./images/product4.jpg" alt="Laptop Stand Adjustable" class="product-image"
+                         onerror="this.src='https://via.placeholder.com/400x250/6f42c1/ffffff?text=Product+Image'">
                     <div class="product-info">
                         <h3 class="product-title">Laptop Stand Adjustable</h3>
                         <div class="rating">
@@ -114,9 +155,10 @@
                     </div>
                 </div>
 
-                <!-- Product Card 5 - REPLACE WITH YOUR PRODUCTS -->
+                <!-- Product Card 5 -->
                 <div class="product-card">
-                    <img src="images/product5.jpg" alt="Bluetooth Speaker Portable" class="product-image">
+                    <img src="./images/product5.jpg" alt="Bluetooth Speaker Portable" class="product-image"
+                         onerror="this.src='https://via.placeholder.com/400x250/ffc107/333333?text=Product+Image'">
                     <div class="product-info">
                         <h3 class="product-title">Bluetooth Speaker Portable</h3>
                         <div class="rating">
@@ -129,9 +171,10 @@
                     </div>
                 </div>
 
-                <!-- Product Card 6 - REPLACE WITH YOUR PRODUCTS -->
+                <!-- Product Card 6 -->
                 <div class="product-card">
-                    <img src="images/product6.jpg" alt="Phone Case with Wallet" class="product-image">
+                    <img src="./images/product6.jpg" alt="Phone Case with Wallet" class="product-image"
+                         onerror="this.src='https://via.placeholder.com/400x250/17a2b8/ffffff?text=Product+Image'">
                     <div class="product-info">
                         <h3 class="product-title">Phone Case with Wallet</h3>
                         <div class="rating">
@@ -177,6 +220,15 @@
         </div>
     </footer>
 
-    <script src="js/script.js"></script>
+    <!-- JavaScript -->
+    <script src="./js/script.js"></script>
+    
+    <!-- Fallback if JS doesn't load -->
+    <noscript>
+        <style>
+            .filter-btn { display: none; }
+            .review-card { display: block !important; }
+        </style>
+    </noscript>
 </body>
 </html>
