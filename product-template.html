@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Tags will be injected here by renderer.js -->
+    
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+
+    <!-- Schema.org Markup will be injected here by renderer.js -->
+</head>
+<body>
+    <header id="main-header">
+        <!-- Header content (nav, logo) can be loaded from a shared JS function -->
+    </header>
+
+    <main class="container product-page">
+        <h1 id="product-name">Loading Product...</h1>
+        <div class="product-meta">
+            <span>Rating: <span id="product-rating"></span></span>
+        </div>
+
+        <div class="product-layout">
+            <div id="product-gallery" class="gallery">
+                <!-- Gallery images will be inserted here -->
+            </div>
+            <div class="product-summary">
+                <p id="product-description"></p>
+                <a id="cta-button" href="#" target="_blank" rel="noopener sponsored" class="cta-button">
+                    Check Price on Amazon
+                </a>
+                <div class="amazon-disclosure">
+                    <small>As an Amazon Associate, I earn from qualifying purchases.</small>
+                </div>
+            </div>
+        </div>
+
+        <section class="pros-cons-section">
+            <div class="pros">
+                <h2>What We Like</h2>
+                <ul id="pros-list"></ul>
+            </div>
+            <div class="cons">
+                <h2>What We Dislike</h2>
+                <ul id="cons-list"></ul>
+            </div>
+        </section>
+
+        <section id="faq-section">
+            <h2>Frequently Asked Questions</h2>
+            <!-- FAQ items will be inserted here -->
+        </section>
+
+        <section id="related-products">
+            <h2>Related Products</h2>
+            <div id="related-products-grid" class="product-grid">
+                <!-- Related product cards will be inserted here -->
+            </div>
+        </section>
+    </main>
+
+    <footer id="main-footer">
+        <!-- Footer content can be loaded from a shared JS function -->
+    </footer>
+
+    <!-- Core rendering script -->
+    <script src="../assets/js/renderer.js"></script>
+    <script>
+        // *** THIS IS THE ONLY LINE THE CLIENT NEEDS TO EDIT PER PAGE ***
+        const productId = 'smart-drone-x1'; // e.g., 'audiophile-headphones-pro'
+
+        document.addEventListener('DOMContentLoaded', () => {
+            // The renderer.js script will automatically find the ID and render the page
+            renderProductPage(productId);
+        });
+    </script>
+</body>
+</html>
