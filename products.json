@@ -1,0 +1,78 @@
+{
+  "products": [
+    {
+      "id": "wireless-headphones-2025",
+      "name": "Premium Wireless Headphones",
+      "category": "Electronics",
+      "amazonUrl": "https://amazon.com/dp/B08EXAMPLE?tag=your-affiliate-id-20",
+      "images": ["headphones-1.jpg", "headphones-2.jpg", "headphones-3.jpg"],
+      "description": "Experience crystal-clear audio with these premium wireless headphones featuring noise cancellation and 30-hour battery life.",
+      "pros": [
+        "Excellent sound quality",
+        "Long battery life",
+        "Comfortable fit",
+        "Active noise cancellation"
+      ],
+      "cons": [
+        "Price point",
+        "Bulky design"
+      ],
+      "rating": "4.6",
+      "price": "$199.99",
+      "keywords": ["wireless headphones", "noise cancelling", "bluetooth headphones", "premium audio"],
+      "specifications": {
+        "batteryLife": "30 hours",
+        "connectivity": "Bluetooth 5.2",
+        "weight": "250g"
+      },
+      "lastUpdated": "2025-01-15"
+    },
+    {
+      "id": "smartphone-2025",
+      "name": "Latest Flagship Smartphone",
+      "category": "Mobile",
+      "amazonUrl": "https://amazon.com/dp/B08EXAMPLE2?tag=your-affiliate-id-20",
+      "images": ["phone-1.jpg", "phone-2.jpg", "phone-3.jpg"],
+      "description": "The latest smartphone with advanced camera system, lightning-fast processor, and all-day battery life.",
+      "pros": [
+        "Outstanding camera quality",
+        "Fast performance",
+        "Premium build quality",
+        "Excellent display"
+      ],
+      "cons": [
+        "High price",
+        "No headphone jack"
+      ],
+      "rating": "4.8",
+      "price": "$899.99",
+      "keywords": ["smartphone", "mobile phone", "flagship phone", "camera phone"],
+      "specifications": {
+        "display": "6.7 inch OLED",
+        "storage": "256GB",
+        "camera": "108MP main"
+      },
+      "lastUpdated": "2025-01-20"
+    }
+  ],
+  "categories": [
+    {
+      "name": "Electronics",
+      "slug": "electronics",
+      "description": "Latest electronics and gadgets",
+      "featured": true
+    },
+    {
+      "name": "Mobile",
+      "slug": "mobile",
+      "description": "Smartphones and mobile accessories",
+      "featured": true
+    },
+    {
+      "name": "Home & Garden",
+      "slug": "home-garden",
+      "description": "Home improvement and garden products",
+      "featured": false
+    }
+  ]
+}
