@@ -3,232 +3,146 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Best Tech Accessories 2025 - Honest Reviews & Buying Guide</title>
-    <meta name="description" content="Discover the best tech accessories of 2025. Honest reviews of wireless earbuds, phone cases, chargers & more. Find top-rated products with real user feedback.">
-    <meta name="keywords" content="best tech accessories 2025, wireless earbuds review, phone accessories, tech gadgets, amazon products, honest reviews">
-    <meta name="author" content="TechAccessoryHub">
-    <meta property="og:title" content="Best Tech Accessories 2025 - Honest Reviews">
-    <meta property="og:description" content="Find the best tech accessories with honest reviews and detailed comparisons.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://yourusername.github.io/your-repo-name">
-    <link rel="canonical" href="https://yourusername.github.io/your-repo-name">
+    <title id="page-title">Best Product Reviews & Recommendations</title>
+    <meta name="description" id="page-description" content="Discover top-rated products with detailed reviews and honest recommendations">
     
-    <!-- CRITICAL: CSS Link - Make sure this path is correct -->
-    <link rel="stylesheet" href="./css/style.css">
+    <!-- SEO Meta Tags -->
+    <meta property="og:title" id="og-title" content="">
+    <meta property="og:description" id="og-description" content="">
+    <meta property="og:image" id="og-image" content="">
+    <meta property="og:url" id="og-url" content="">
+    <meta name="twitter:card" content="summary_large_image">
     
-    <!-- Fallback CSS in case external file fails -->
-    <style>
-        /* Emergency fallback styles */
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; background: #f8f9fa; }
-        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
-        .header { background: #fff; box-shadow: 0 2px 10px rgba(0,0,0,0.1); position: fixed; width: 100%; top: 0; z-index: 1000; }
-        .navbar { padding: 1rem 0; }
-        .nav-container { display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto; padding: 0 20px; }
-        .logo { font-size: 1.8rem; font-weight: bold; color: #007bff; }
-        .nav-menu { display: flex; list-style: none; gap: 2rem; }
-        .nav-link { text-decoration: none; color: #333; font-weight: 500; }
-        .hero { background: linear-gradient(135deg, #007bff, #0056b3); color: white; padding: 120px 0 80px; text-align: center; margin-top: 80px; }
-        .hero-title { font-size: 3rem; margin-bottom: 1rem; font-weight: 700; }
-        .hero-subtitle { font-size: 1.3rem; margin-bottom: 2rem; }
-        .cta-button { display: inline-block; background: #28a745; color: white; padding: 15px 30px; text-decoration: none; border-radius: 50px; font-weight: 600; }
-    </style>
+    <!-- Canonical URL -->
+    <link rel="canonical" id="canonical-url" href="">
     
     <!-- Schema Markup -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "WebSite",
-        "name": "TechAccessoryHub",
-        "description": "Best tech accessories reviews and buying guides",
-        "url": "https://yourusername.github.io/your-repo-name"
-    }
-    </script>
+    <script type="application/ld+json" id="schema-markup"></script>
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="assets/css/main.css" as="style">
+    <link rel="preload" href="assets/js/main.js" as="script">
 </head>
 <body>
-    <!-- CSS Loading Check -->
-    <script>
-        // Check if CSS is loaded
-        window.addEventListener('load', function() {
-            const testElement = document.createElement('div');
-            testElement.style.cssText = 'position: absolute; visibility: hidden;';
-            testElement.className = 'css-test';
-            document.body.appendChild(testElement);
-            
-            const computedStyle = window.getComputedStyle(testElement);
-            if (computedStyle.getPropertyValue('font-family').indexOf('Segoe UI') === -1) {
-                console.warn('CSS not loaded properly. Using fallback styles.');
-                document.body.classList.add('fallback-mode');
-            }
-        });
-    </script>
-
     <!-- Header -->
-    <header class="header">
-        <nav class="navbar">
-            <div class="nav-container">
-                <h1 class="logo">TechAccessoryHub</h1>
-                <ul class="nav-menu">
-                    <li><a href="index.html" class="nav-link">Home</a></li>
-                    <li><a href="reviews.html" class="nav-link">Reviews</a></li>
-                </ul>
+    <header class="site-header">
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="container">
+                <div class="navbar-brand">
+                    <a class="navbar-item" href="/">
+                        <h1 id="site-title">Product Reviews</h1>
+                    </a>
+                    <button class="navbar-burger" aria-label="menu" aria-expanded="false">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </button>
+                </div>
+                <div class="navbar-menu">
+                    <div class="navbar-end">
+                        <a class="navbar-item" href="/">Home</a>
+                        <a class="navbar-item" href="/products/">Products</a>
+                        <a class="navbar-item" href="/blog/">Blog</a>
+                        <a class="navbar-item" href="/about.html">About</a>
+                        <a class="navbar-item" href="/contact.html">Contact</a>
+                    </div>
+                </div>
             </div>
         </nav>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <h1 class="hero-title">Best Tech Accessories 2025</h1>
-            <p class="hero-subtitle">Honest Reviews & Expert Buying Guides for Top-Rated Tech Products</p>
-            <a href="reviews.html" class="cta-button">View All Reviews</a>
-        </div>
-    </section>
-
-    <!-- Featured Products Section -->
-    <section class="featured-products">
-        <div class="container">
-            <h2 class="section-title">Top Rated Tech Accessories</h2>
-            <div class="products-grid">
-                
-                <!-- Product Card 1 -->
-                <div class="product-card">
-                    <img src="./images/product1.jpg" alt="Wireless Earbuds Pro Max" class="product-image" 
-                         onerror="this.src='https://via.placeholder.com/400x250/007bff/ffffff?text=Product+Image'">
-                    <div class="product-info">
-                        <h3 class="product-title">Wireless Earbuds Pro Max</h3>
-                        <div class="rating">
-                            <span class="stars">★★★★★</span>
-                            <span class="rating-text">4.8/5 (2,456 reviews)</span>
-                        </div>
-                        <p class="product-price">$79.99 - $129.99</p>
-                        <p class="product-description">Premium sound quality with noise cancellation and 30-hour battery life.</p>
-                        <a href="reviews.html#product1" class="review-btn">Read Full Review</a>
-                    </div>
-                </div>
-
-                <!-- Product Card 2 -->
-                <div class="product-card">
-                    <img src="./images/product2.jpg" alt="Fast Charging Cable Set" class="product-image"
-                         onerror="this.src='https://via.placeholder.com/400x250/28a745/ffffff?text=Product+Image'">
-                    <div class="product-info">
-                        <h3 class="product-title">Fast Charging Cable Set</h3>
-                        <div class="rating">
-                            <span class="stars">★★★★☆</span>
-                            <span class="rating-text">4.6/5 (1,789 reviews)</span>
-                        </div>
-                        <p class="product-price">$19.99 - $34.99</p>
-                        <p class="product-description">Durable charging cables with fast charge technology for all devices.</p>
-                        <a href="reviews.html#product2" class="review-btn">Read Full Review</a>
-                    </div>
-                </div>
-
-                <!-- Product Card 3 -->
-                <div class="product-card">
-                    <img src="./images/product3.jpg" alt="Wireless Phone Charger" class="product-image"
-                         onerror="this.src='https://via.placeholder.com/400x250/dc3545/ffffff?text=Product+Image'">
-                    <div class="product-info">
-                        <h3 class="product-title">Wireless Phone Charger</h3>
-                        <div class="rating">
-                            <span class="stars">★★★★★</span>
-                            <span class="rating-text">4.9/5 (3,421 reviews)</span>
-                        </div>
-                        <p class="product-price">$24.99 - $49.99</p>
-                        <p class="product-description">Qi-certified wireless charger with fast charging and sleek design.</p>
-                        <a href="reviews.html#product3" class="review-btn">Read Full Review</a>
-                    </div>
-                </div>
-
-                <!-- Product Card 4 -->
-                <div class="product-card">
-                    <img src="./images/product4.jpg" alt="Laptop Stand Adjustable" class="product-image"
-                         onerror="this.src='https://via.placeholder.com/400x250/6f42c1/ffffff?text=Product+Image'">
-                    <div class="product-info">
-                        <h3 class="product-title">Laptop Stand Adjustable</h3>
-                        <div class="rating">
-                            <span class="stars">★★★★☆</span>
-                            <span class="rating-text">4.7/5 (1,234 reviews)</span>
-                        </div>
-                        <p class="product-price">$35.99 - $69.99</p>
-                        <p class="product-description">Ergonomic laptop stand with adjustable height and cooling design.</p>
-                        <a href="reviews.html#product4" class="review-btn">Read Full Review</a>
-                    </div>
-                </div>
-
-                <!-- Product Card 5 -->
-                <div class="product-card">
-                    <img src="./images/product5.jpg" alt="Bluetooth Speaker Portable" class="product-image"
-                         onerror="this.src='https://via.placeholder.com/400x250/ffc107/333333?text=Product+Image'">
-                    <div class="product-info">
-                        <h3 class="product-title">Bluetooth Speaker Portable</h3>
-                        <div class="rating">
-                            <span class="stars">★★★★★</span>
-                            <span class="rating-text">4.8/5 (2,876 reviews)</span>
-                        </div>
-                        <p class="product-price">$45.99 - $89.99</p>
-                        <p class="product-description">Waterproof Bluetooth speaker with 360° sound and 24-hour battery.</p>
-                        <a href="reviews.html#product5" class="review-btn">Read Full Review</a>
-                    </div>
-                </div>
-
-                <!-- Product Card 6 -->
-                <div class="product-card">
-                    <img src="./images/product6.jpg" alt="Phone Case with Wallet" class="product-image"
-                         onerror="this.src='https://via.placeholder.com/400x250/17a2b8/ffffff?text=Product+Image'">
-                    <div class="product-info">
-                        <h3 class="product-title">Phone Case with Wallet</h3>
-                        <div class="rating">
-                            <span class="stars">★★★★☆</span>
-                            <span class="rating-text">4.5/5 (987 reviews)</span>
-                        </div>
-                        <p class="product-price">$29.99 - $54.99</p>
-                        <p class="product-description">Premium leather case with card slots and magnetic closure.</p>
-                        <a href="reviews.html#product6" class="review-btn">Read Full Review</a>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Trust Section -->
-    <section class="trust-section">
-        <div class="container">
-            <h2 class="section-title">Why Trust Our Reviews?</h2>
-            <div class="trust-grid">
-                <div class="trust-item">
-                    <h3>🏆 Honest Reviews</h3>
-                    <p>We test every product personally and provide unbiased opinions based on real experience.</p>
-                </div>
-                <div class="trust-item">
-                    <h3>📊 Data-Driven</h3>
-                    <p>Our recommendations are based on extensive research and real customer feedback.</p>
-                </div>
-                <div class="trust-item">
-                    <h3>🤝 Amazon Partner</h3>
-                    <p>As an Amazon Associate, we earn from qualifying purchases at no extra cost to you.</p>
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-body">
+                <div class="container">
+                    <h1 class="hero-title">Find Your Perfect Product</h1>
+                    <p class="hero-subtitle">Honest reviews and recommendations you can trust</p>
+                    <a href="/products/" class="cta-button">Browse Products</a>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+        <!-- Featured Products -->
+        <section class="featured-products">
+            <div class="container">
+                <h2>Featured Products</h2>
+                <div class="products-grid" id="featured-products-grid">
+                    <!-- Products will be loaded dynamically -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Best Of Categories -->
+        <section class="categories">
+            <div class="container">
+                <h2>Shop by Category</h2>
+                <div class="categories-grid" id="categories-grid">
+                    <!-- Categories will be loaded dynamically -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Recent Blog Posts -->
+        <section class="recent-posts">
+            <div class="container">
+                <h2>Latest Reviews</h2>
+                <div class="posts-grid" id="recent-posts-grid">
+                    <!-- Blog posts will be loaded dynamically -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Signup -->
+        <section class="newsletter">
+            <div class="container">
+                <h2>Stay Updated</h2>
+                <p>Get the latest product reviews and deals delivered to your inbox</p>
+                <form class="newsletter-form" id="newsletter-form">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </section>
+    </main>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="site-footer">
         <div class="container">
-            <p>&copy; 2025 TechAccessoryHub. All rights reserved.</p>
-            <p class="disclaimer">As an Amazon Associate, I earn from qualifying purchases. This helps support our free content.</p>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="/products/">All Products</a></li>
+                        <li><a href="/blog/">Blog</a></li>
+                        <li><a href="/about.html">About</a></li>
+                        <li><a href="/privacy-policy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-links" id="social-links">
+                        <!-- Social links will be loaded dynamically -->
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Disclosure</h3>
+                    <p>This site contains affiliate links. We may earn a commission when you purchase through these links at no additional cost to you.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 <span id="footer-site-name">Product Reviews</span>. All rights reserved.</p>
+            </div>
         </div>
     </footer>
 
-    <!-- JavaScript -->
-    <script src="./js/script.js"></script>
-    
-    <!-- Fallback if JS doesn't load -->
-    <noscript>
-        <style>
-            .filter-btn { display: none; }
-            .review-card { display: block !important; }
-        </style>
-    </noscript>
+    <!-- Scripts -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/seo-optimizer.js"></script>
 </body>
 </html>
