@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://yoursite.com/sitemap.xml
+
+# Optimize crawl budget
+Disallow: /assets/
+Disallow: /config/
+Allow: /assets/images/
+
+# Prevent indexing of search results
+Disallow: /*?*search=
+Disallow: /*?*q=
