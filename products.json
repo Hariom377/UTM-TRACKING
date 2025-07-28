@@ -1,78 +1,48 @@
 {
   "products": [
     {
-      "id": "wireless-headphones-2025",
-      "name": "Premium Wireless Headphones",
-      "category": "Electronics",
-      "amazonUrl": "https://amazon.com/dp/B08EXAMPLE?tag=your-affiliate-id-20",
-      "images": ["headphones-1.jpg", "headphones-2.jpg", "headphones-3.jpg"],
-      "description": "Experience crystal-clear audio with these premium wireless headphones featuring noise cancellation and 30-hour battery life.",
-      "pros": [
-        "Excellent sound quality",
-        "Long battery life",
-        "Comfortable fit",
-        "Active noise cancellation"
-      ],
-      "cons": [
-        "Price point",
-        "Bulky design"
-      ],
-      "rating": "4.6",
-      "price": "$199.99",
-      "keywords": ["wireless headphones", "noise cancelling", "bluetooth headphones", "premium audio"],
-      "specifications": {
-        "batteryLife": "30 hours",
-        "connectivity": "Bluetooth 5.2",
-        "weight": "250g"
-      },
-      "lastUpdated": "2025-01-15"
-    },
-    {
-      "id": "smartphone-2025",
-      "name": "Latest Flagship Smartphone",
-      "category": "Mobile",
-      "amazonUrl": "https://amazon.com/dp/B08EXAMPLE2?tag=your-affiliate-id-20",
-      "images": ["phone-1.jpg", "phone-2.jpg", "phone-3.jpg"],
-      "description": "The latest smartphone with advanced camera system, lightning-fast processor, and all-day battery life.",
-      "pros": [
-        "Outstanding camera quality",
-        "Fast performance",
-        "Premium build quality",
-        "Excellent display"
-      ],
-      "cons": [
-        "High price",
-        "No headphone jack"
-      ],
+      "id": "smart-drone-x1",
+      "name": "Smart Drone X1",
+      "category": "Drones",
+      "amazonUrl": "https://amazon.com/dp/B081FDRQ4C",
+      "images": ["drone-1.jpg", "drone-2.jpg", "drone-3.jpg"],
+      "description": "The Smart Drone X1 offers a 4K camera, 30-minute flight time, and advanced GPS follow-me features, making it the perfect choice for both beginners and professional photographers.",
+      "summary": "A top-tier 4K drone with excellent battery life and user-friendly controls.",
+      "pros": ["Excellent 4K video quality", "Long 30-minute battery life", "Intuitive controls for beginners"],
+      "cons": ["Slightly bulky for travel", "App interface could be improved"],
       "rating": "4.8",
-      "price": "$899.99",
-      "keywords": ["smartphone", "mobile phone", "flagship phone", "camera phone"],
-      "specifications": {
-        "display": "6.7 inch OLED",
-        "storage": "256GB",
-        "camera": "108MP main"
-      },
-      "lastUpdated": "2025-01-20"
-    }
-  ],
-  "categories": [
-    {
-      "name": "Electronics",
-      "slug": "electronics",
-      "description": "Latest electronics and gadgets",
-      "featured": true
+      "price": "499.99",
+      "keywords": ["4k drone", "camera drone", "best drone 2023"],
+      "faqs": [
+        {
+          "question": "What is the maximum flight range?",
+          "answer": "The maximum flight range is approximately 5 kilometers under ideal conditions."
+        },
+        {
+          "question": "Is it waterproof?",
+          "answer": "No, the Smart Drone X1 is not waterproof. Avoid flying in rain or near bodies of water."
+        }
+      ]
     },
     {
-      "name": "Mobile",
-      "slug": "mobile",
-      "description": "Smartphones and mobile accessories",
-      "featured": true
-    },
-    {
-      "name": "Home & Garden",
-      "slug": "home-garden",
-      "description": "Home improvement and garden products",
-      "featured": false
+      "id": "audiophile-headphones-pro",
+      "name": "Audiophile Headphones Pro",
+      "category": "Audio",
+      "amazonUrl": "https://amazon.com/dp/B0756CYWWD",
+      "images": ["headphones-1.jpg", "headphones-2.jpg"],
+      "description": "Experience unparalleled sound clarity with the Audiophile Headphones Pro. Featuring noise-cancellation technology and a 40-hour battery life, they are designed for the ultimate listening session.",
+      "summary": "Premium noise-cancelling headphones with long battery life and superior sound.",
+      "pros": ["Crystal-clear audio", "Effective noise cancellation", "Extremely comfortable"],
+      "cons": ["High price point"],
+      "rating": "4.9",
+      "price": "349.00",
+      "keywords": ["noise cancelling headphones", "bluetooth headphones", "premium audio"],
+      "faqs": [
+        {
+          "question": "Do they come with a case?",
+          "answer": "Yes, a premium hard-shell travel case is included."
+        }
+      ]
     }
   ]
 }
