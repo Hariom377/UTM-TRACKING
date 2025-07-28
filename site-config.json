@@ -1,0 +1,23 @@
+{
+  "siteTitle": "Best Product Reviews 2025",
+  "siteDescription": "Discover top-rated products with detailed reviews, honest recommendations, and expert buying guides. Find the perfect products for your needs.",
+  "authorName": "Product Expert",
+  "amazonAffiliateId": "your-affiliate-id-20",
+  "socialMedia": {
+    "facebook": "https://facebook.com/yourpage",
+    "instagram": "https://instagram.com/yourpage",
+    "twitter": "https://twitter.com/yourpage",
+    "youtube": "https://youtube.com/yourchannel"
+  },
+  "contactEmail": "contact@yoursite.com",
+  "analytics": "G-XXXXXXXXXX",
+  "theme": {
+    "primaryColor": "#ff9500",
+    "secondaryColor": "#007acc"
+  },
+  "seo": {
+    "defaultKeywords": ["product reviews", "buying guide", "best products", "recommendations"],
+    "enableAutomaticSitemap": true,
+    "enableSchemaMarkup": true
+  }
+}
