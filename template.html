@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="product-title">Product Name - Review & Price Comparison</title>
+    <meta name="description" id="product-description" content="">
+    
+    <!-- Product Schema -->
+    <script type="application/ld+json" id="product-schema"></script>
+    
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link rel="stylesheet" href="../assets/css/product-page.css">
+</head>
+<body>
+    <header class="site-header">
+        <!-- Navigation -->
+    </header>
+
+    <main>
+        <div class="container">
+            <nav class="breadcrumbs">
+                <ol>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/products/">Products</a></li>
+                    <li><span id="breadcrumb-category">Category</span></li>
+                    <li><span id="breadcrumb-product">Product</span></li>
+                </ol>
+            </nav>
+
+            <article class="product-review">
+                <header class="product-header">
+                    <h1 id="product-name">Product Name</h1>
+                    <div class="product-meta">
+                        <div class="product-rating">
+                            <div class="stars" id="product-stars"></div>
+                            <span id="product-rating-text">4.5/5</span>
+                        </div>
+                        <div class="product-price" id="product-price">$99.99</div>
+                    </div>
+                </header>
+
+                <div class="product-content">
+                    <div class="product-gallery">
+                        <div class="main-image">
+                            <img id="main-product-image" src="" alt="" loading="lazy">
+                        </div>
+                        <div class="thumbnail-gallery" id="thumbnail-gallery">
+                            <!-- Thumbnails loaded dynamically -->
+                        </div>
+                    </div>
+
+                    <div class="product-details">
+                        <div class="buy-section">
+                            <a href="#" id="amazon-buy-button" class="buy-button large" target="_blank" rel="noopener noreferrer sponsored">
+                                🛒 Buy on Amazon
+                            </a>
+                            <p class="affiliate-notice">As an Amazon Associate, we earn from qualifying purchases.</p>
+                        </div>
+
+                        <div class="product-summary">
+                            <h2>Product Overview</h2>
+                            <p id="product-description-text"></p>
+                        </div>
+
+                        <div class="pros-cons">
+                            <div class="pros">
+                                <h3>✅ Pros</h3>
+                                <ul id="product-pros"></ul>
+                            </div>
+                            <div class="cons">
+                                <h3>❌ Cons</h3>
+                                <ul id="product-cons"></ul>
+                            </div>
+                        </div>
+
+                        <div class="specifications">
+                            <h3>Specifications</h3>
+                            <table id="specs-table">
+                                <!-- Specifications loaded dynamically -->
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <section class="detailed-review">
+                    <h2>Detailed Review</h2>
+                    <div id="review-content">
+                        <!-- Detailed review
